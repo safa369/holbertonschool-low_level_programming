@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main:int-positive.
+ *main-int-positive.
  *Return:n;
  */
 int main(void)
