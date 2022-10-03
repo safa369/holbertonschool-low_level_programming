@@ -5,8 +5,9 @@
  */
 int main(void)
 {
-	int i;
+	int i, j;
 
+	j = 48;
 	for (i = 48; i <= 57; i++)
 	{
 		putchar(i);
@@ -14,6 +15,10 @@ int main(void)
 		{
 		putchar(' ');
 		putchar(',');
+		}
+		while (j <= 57)
+		{
+			j++;
 		}
 	}
 		putchar('\n');
