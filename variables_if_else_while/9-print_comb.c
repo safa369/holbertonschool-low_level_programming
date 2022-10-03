@@ -5,20 +5,15 @@
  */
 int main(void)
 {
-	int i, j;
+	int i;
 
-	j = 48;
-	for (i = 48; i <= 57; i++)
+	for (i = 48; i <=57; i++)
 	{
 		putchar(i);
 		if (i < 57)
 		{
-		putchar(' ');
 		putchar(',');
-		}
-		while (j <= 57)
-		{
-			j++;
+		putchar(' ');
 		}
 	}
 		putchar('\n');
