@@ -4,11 +4,12 @@
  *_islower - cheks for lowercase character.
  * Return: 1 or 0;
  */
-int _islower(int c)
+int _islower(void)
 {
 	char lower;
+	int c;
 
-	if ( islower(c) )
+	if (islower(c))
 	{
 		lower = 1;
 	}
@@ -16,5 +17,5 @@ int _islower(int c)
 	{
 		lower = 0;
 	}
-	return lower;
+	return (lower);
 }
