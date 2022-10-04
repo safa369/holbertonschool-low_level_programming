@@ -1,5 +1,4 @@
 #include "main.h"
-int _putchar(char c);
 /**
  * print_alphabet_x10 - print alphabet 10times;
  * return: void;
