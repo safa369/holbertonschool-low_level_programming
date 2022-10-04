@@ -2,12 +2,12 @@
 #include <ctype.h>
 /**
  *_islower - cheks for lowercase character.
+ * @c: lowercase character
  * Return: 1 or 0;
  */
-int _islower(void)
+int _islower(int c)
 {
 	char lower;
-	int c;
 
 	if (islower(c))
 	{
