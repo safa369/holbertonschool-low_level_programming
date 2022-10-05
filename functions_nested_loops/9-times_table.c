@@ -5,53 +5,30 @@
  */
 void times_table(void)
 {
-	int i, j, k, l, a;
+	int i, j, a;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
 			a = i * j;
-			k = a % 10;
-			l = a / 10;
-			if(a == 0 && j == 0)
-			{
-				_putchar('0' + a);
-				_putchar(',');
-			}
-			else if(j < 9 )
+			if (a == 0 && j == 0)
+				printf("%d,", a);
+			else if (j < 9)
 			{
 				if (a <= 9)
-				{
-					_putchar(' ');	
-					_putchar(' ');
-					_putchar('0' + a);
-					_putchar(',');
-				}
+					printf("  %d,", a);
 				else
-				{
-					_putchar(' ');
-					_putchar('0' + l);
-					_putchar('0' + k);
-					_putchar(',');
-				}
+					printf(" %d,", a);
 			}
 			else
 			{
 				if (a <= 9)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + a);
-				}
+				printf("  %d", a);
 				else
-				{
-					_putchar(' ');
-					_putchar('0' + l);
-					_putchar('0' + k);
-				}
+				printf(" %d", a);
 			}
-			}
-			_putchar('\n');
+		}
+			printf("\n");
 	}
 }
