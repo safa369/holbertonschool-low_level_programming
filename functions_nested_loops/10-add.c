@@ -1,12 +1,13 @@
 #include "main.h"
 /**
  *add - function add two numbers.
- *Return: integer.
+ *@a, @b: two integer;
+ * Return: integer.
  */
-int add(int a, int b)
+int add(void)
 {
-	int s;
+	int s, a, b;
 
 	s = a + b;
-	return s;
+	return (s);
 }
