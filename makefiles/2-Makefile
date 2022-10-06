@@ -1,6 +1,9 @@
 CC=gcc
-SRC=main.c school.c
-OBJ=$(main.o) $( school.o)
-NAME=school
-all:	$(OBJ)
-	$(CC) $(SRC) -o $(NAME)
+SRC := main.c school.c
+OBJ := main.o school.o
+NAME := school
+all:	prog1 prog2
+prog1:
+	${CC} ${SRC} -o ${NAME}
+prog2:
+	${CC} ${OBJ} -o ${NAME}
