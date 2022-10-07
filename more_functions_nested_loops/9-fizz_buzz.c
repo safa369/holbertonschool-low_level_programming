@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * fizz_buzz - print fizz buzz.
+ * main - print fizz buzz.
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 	{
 		a = i % 3;
 		b = i % 5;
-		if ( a == 0 && b == 0)
+		if (a == 0 && b == 0)
 		{
 			printf("%s", c3);
 		}
@@ -19,12 +19,12 @@ int main(void)
 		{
 			printf("%s", c2);
 		}
-		else if ( a == 0)
+		else if (a == 0)
 			printf("%s", c1);
 		else
 			printf("%d", i);
 		if (i < 100)
 			printf(" ");
 	}
-	return(0);
+	return (0);
 }
