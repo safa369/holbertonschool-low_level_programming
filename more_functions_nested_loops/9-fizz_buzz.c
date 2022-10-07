@@ -23,7 +23,7 @@ int main(void)
 			printf("%s", c1);
 		else
 			printf("%d", i);
-		if (i < 100)
+		if (i < 99)
 			printf(" ");
 	}
 	return (0);
