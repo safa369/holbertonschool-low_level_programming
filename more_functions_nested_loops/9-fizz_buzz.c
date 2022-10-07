@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - print fizz buzz.
+ * Return: 0.
  */
 int main(void)
 {
@@ -23,7 +24,7 @@ int main(void)
 			printf("%s", c1);
 		else
 			printf("%d", i);
-		if (i <= 99)
+		if (i < 100)
 			printf(" ");
 	}
 	return (0);
