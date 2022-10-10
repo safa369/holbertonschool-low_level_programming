@@ -9,6 +9,6 @@ int a, i;
 
 a = strlen(str);
 for (i = 0 ; i <= a; i--)
-	_putchar(str[i]);
+	_putchar(str[i] + '0');
 
 }
