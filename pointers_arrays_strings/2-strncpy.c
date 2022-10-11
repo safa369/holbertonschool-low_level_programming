@@ -8,20 +8,14 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, a;
+	int i;
 
-	a = strlen(src);
-	if (a == n)
-	{
-		printf("%s", src);
-	}
-	else
-	{
-		for (i = 0 ; i < n; i++)
+	for (i = 0 ; src[i] != '\0' && i < n; i++)
 		{
 			dest[i] = src[i];
 		}
-		
-	}
+	if (i < n)
+	dest[i ] = '\0';
+
 	return (dest);
 }
