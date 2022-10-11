@@ -10,6 +10,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i, a;
 
+	gets(n);
 	a = strlen(dest);
 	i = 0;
 	while (n != 0)
