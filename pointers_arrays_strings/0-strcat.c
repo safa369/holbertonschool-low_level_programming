@@ -27,7 +27,6 @@ char *_strcat(char *dest, char *src)
 	}
 	str[b] = '\0';
 	dest = str;
-	printf("%s", dest);
 	return dest;
 }
 
