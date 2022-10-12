@@ -24,7 +24,6 @@ char *cap_string(char *c)
 			}
 			else if (c[i + 1] == 't')
 			{
-			
 				c[i] = '\t';
 				i++;
 			}
