@@ -25,9 +25,7 @@ char *cap_string(char *c)
 		c[j] == '\t' ||
 		c[j] == '\n' ||
 		c[j] == '\0')
-		{
 		c[j + 1] = toupper(c[j + 1]);
-		}
 		}
 	return (c);
 }
