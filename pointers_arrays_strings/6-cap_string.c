@@ -9,9 +9,10 @@ char *cap_string(char *c)
 	int n, j;
 
 	n = strlen(c);
-	for (j = 1; j <= n; j++)
+	c[0] = toupper(c[0]);
+	for (j = 0; j < n; j++)
 	{
-		if (c[j - 1] == ',' ||
+		if (c[j] == ',' ||
 		c[j] == ';' ||
 		c[j] == '.' ||
 		c[j] == '!' ||
