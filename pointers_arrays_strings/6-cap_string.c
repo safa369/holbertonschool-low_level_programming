@@ -6,29 +6,28 @@
  */
 char *cap_string(char *c)
 {
-	int i, n;
-
+	int n, j;
+	
 	n = strlen(c);
-	i = 0;
-	while (i < n)
+	for (j = 0; j < n; j++)
 	{
-		if (c[i] != '\\')
-			i++;
-		else if (c[i] == '\\')
-		{
-			if (c[i + 1] == 'n')
+		if (c[j] == ','||
+			c[j] == ';'||
+			c[j] == '.'||
+			c[j] == '!'||
+			c[j] == '?'||
+			c[j] == '"'||
+			c[j] == '('||
+			c[j] == ')'||
+			c[j] == '{'||
+			c[j] == '}'||
+			c[j] == ' '||
+			c[j] == '\t'||
+			c[j] == '\n'||
+			c[j] == '\0')
 			{
-				c[i] = '\0';
-				i++;
-				c[i] = '\n';
-			}
-			else if (c[i + 1] == 't')
-			{
-				c[i] = '\t';
-				i++;
+				c[j + 1] = toupper(c[j +1]); 
 			}
 		}
-		i++;
-	}
 	return (c);
 }
