@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * *string_toupper - change alla lower case to uppercase.
- * @*: pointer;
+ * @c: pointer;
  * Return: char;
  */
 char *string_toupper(char *c)
