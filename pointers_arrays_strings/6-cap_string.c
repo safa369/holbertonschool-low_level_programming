@@ -9,9 +9,9 @@ char *cap_string(char *c)
 	int n, j;
 
 	n = strlen(c);
-	for (j = 0; j < n; j++)
+	for (j = 1; j <= n; j++)
 	{
-		if (c[j] == ',' ||
+		if (c[j - 1] == ',' ||
 		c[j] == ';' ||
 		c[j] == '.' ||
 		c[j] == '!' ||
