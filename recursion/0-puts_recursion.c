@@ -2,15 +2,17 @@
 /**
  * _puts_recursion - function print a string.
  * @s: char;
+ * Return: 0; 
  */
 void _puts_recursion(char *s)
 {
-	int i, a;
 
-	a = strlen(s);
-	for (i = 0; i < a; i++)
+	if (*s == '\0')
 	{
-		_putchar(*(s + i));
+		_putchar('\n');
+		return;
 	}
-	_putchar('\n');
+		_putchar(*s);
+		s++;
+		_puts_recursion(s);
 }
