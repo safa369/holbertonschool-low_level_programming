@@ -25,5 +25,5 @@ if (n < 2)
 {
 	return (0);
 }
-	return (found-prime(n, 2));
+	return (found_prime(n, 2));
 }
