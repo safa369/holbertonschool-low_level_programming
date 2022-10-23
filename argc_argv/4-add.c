@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i, a, j, add = 0;
 	
 	if (argc < 1)
 	{
@@ -19,12 +19,15 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (!atoi(argv[i]))
+			a = strlen(argv[i])
+				for (j = 0; j < a; j++)
+				{
+			if (!atoi(argv[i][j]))
 				{
 					printf("ERROR\n");
 					return(1);
 				}
-					
+				}	
 		add = add + atoi(argv[i]);
 		}
 	}
