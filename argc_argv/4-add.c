@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		a = is_a_digit(argv[i]);
 		if (a == -1)
 		{
-		printf("ERROR\n");
+		printf("Error\n");
 		return (1);
 		}
 		add = add + a;
