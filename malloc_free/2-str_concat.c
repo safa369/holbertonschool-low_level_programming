@@ -7,14 +7,13 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *c, *p;
+	char *c;
 	unsigned int i, j, a, b;
 
-	p = " ";
 	if (!s1)
-	       s1 = p;
+	       s1 = " ";
 	if (!s2)
-		s2 = p;
+		s2 = " ";
 	i = 0;
 	j = 0;
 	while (s1[i] != '\0')
