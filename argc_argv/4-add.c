@@ -1,5 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+/**
+ * is_a_digit - check if a char is a digit.
+ * @c: char;
+ * Return: integer;
+ */
+int is_a_digit(char *c)
+{
+	int i, a, str;
+
+	i = 0;
+	a = 0;
+	str = strlen(c);
+	while (i < str)
+	{
+		if (c[i] < '0' || c[i] > '9')
+		{
+			return (-1);
+		}
+		else
+		a = a * 10 + (c[i] - '0');
+		i++;
+	}
+	return (a);
+}
 /**
  * main - program add positive numbers.
  * @argv: int;
@@ -8,29 +33,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, a, j, add = 0;
-	
-	if (argc < 1)
+	int i, a, add = 0;
+
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-		return(0);
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
+		a = is_a_digit(argv[i]);
+		if (a == -1)
 		{
-			a = strlen(argv[i])
-				for (j = 0; j < a; j++)
-				{
-			if (!atoi(argv[i][j]))
-				{
-					printf("ERROR\n");
-					return(1);
-				}
-				}	
-		add = add + atoi(argv[i]);
+		printf("ERROR\n");
+		return (1);
 		}
-	}
+		add = add + a;
+		}
 	printf("%d\n", add);
-		return(0);
+		return (0);
 }
