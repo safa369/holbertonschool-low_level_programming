@@ -11,7 +11,7 @@ int found_prime(int a, int b)
 	return (1);
 	if((a % b) != 0)
 		return (0);
-	return (found_prime(a, b + 1);
+	return (found_prime(a, b + 1));
 }
 /**
  * is_prime_number - function verify if a number is prime.
