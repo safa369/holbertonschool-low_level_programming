@@ -10,7 +10,7 @@ int sqrt_main(int a, int b)
 	if (a == (b * b))
 		return (b);
 	else if (a > (b * b))
-		return (sqrt_main(a, b + 1))
+		return (sqrt_main(a, b + 1));
 	else
 		return (-1);
 }
