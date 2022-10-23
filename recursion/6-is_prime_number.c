@@ -3,13 +3,13 @@
  * found_prime - function recursion.
  * @a: integer.
  * @b: integer.
- * return: integer;
+ * Return: integer;
  */
 int found_prime(int a, int b)
 {
 	if (a == b)
 	return (1);
-	if((a % b) != 0)
+	if (a % b) != 0)
 		return (0);
 	return (found_prime(a, b + 1));
 }
