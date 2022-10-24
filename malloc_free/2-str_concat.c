@@ -10,9 +10,9 @@ char *str_concat(char *s1, char *s2)
 	char *c;
 	unsigned int i, j, a, b;
 
-	if (s1 == NULL)
+	if (s1[0] == NULL)
 	       s1 = "";
-	if (s2 == NULL)
+	if (s2[0] == NULL)
 		s2 = "";
 	i = 0;
 	j = 0;
