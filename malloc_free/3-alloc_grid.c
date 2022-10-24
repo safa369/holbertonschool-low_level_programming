@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 	{
 		while (h < height)
 		{
-			*grid[w][h] = 0;
+			grid[w][h] = 0;
 			h++;
 		}
 		w++;
