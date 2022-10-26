@@ -7,21 +7,20 @@
  */
 int *array_range(int min, int max)
 {
-	int i, j;
+	int j;
 	int *ptr;
 
 	if (min > max)
-		return(NULL);
-	i = min;
-	while (i < max)
-		i++;
-	ptr = malloc(i * sizeof(ptr));
+		return (NULL);
+	ptr = malloc((max - min +1) * sizeof(ptr));
+	if (ptr == NULL)
+		return (NULL);
 	j = 0;
-	while ( min != max)
+	while (min <= max)
 	{
 		ptr[j] = min;
 		min++;
 		j++;
 	}
-	return(ptr);
+	return (ptr);
 }
