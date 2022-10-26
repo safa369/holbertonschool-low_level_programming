@@ -8,11 +8,15 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
+	unsigned int i, m;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = malloc(nmemb + 1 * sizeof(size));
+	m = nmemb * size;
+	ptr = malloc(m);
 	if (ptr == NULL)
 		return (NULL);
+	for (i = 0; i < m; i++)
+		ptr[i] = 0;
 return (ptr);
 }
