@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * get_op_fun - function return a pointer to the operator correspand.
+ * get_op_func - function return a pointer to the operator correspand.
  * @s: char;
  * Return: integer;
  */
@@ -16,14 +16,14 @@ int (*get_op_func(char *s))(int, int)
 			{"%", op_mod},
 			{NULL, NULL}
 			};
-    int i;
+	int i;
 
-    i = 0;
-    while (i < 5)
-    {
-	if (ops[i].op[0] == s[0])
-	return (ops[i].f);
+	i = 0;
+	while (i < 5)
+	{
+		if (ops[i].op[0] == s[0])
+		return (ops[i].f);
 	i++;
-    }
+	}
 return (NULL);
 }
