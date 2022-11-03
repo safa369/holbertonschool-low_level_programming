@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * main - main function.
- * àargc: integr;
+ * @argc: integr;
  * @argv: char;
  * Return: always 0.
  */
@@ -26,5 +26,5 @@ if (s == NULL)
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	printf("%d\n", s(a, b));
-	return(0);
+	return (0);
 }
