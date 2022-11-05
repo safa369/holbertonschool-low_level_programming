@@ -5,7 +5,7 @@
  * @n: number of arguments;
  * Return: integer;
  */
-int sum_the_all(const unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i, s = 0;
 	va_list nptr;
@@ -14,7 +14,7 @@ int sum_the_all(const unsigned int n, ...)
 		return(s);
 	va_start(nptr, n);
 	for (i = 0; i < n; i++)
-		s = va_arg(nptr, unsigned int);
+		s = s + va_arg(nptr, unsigned int);
 	va_end(nptr);
 return (s);
 }
