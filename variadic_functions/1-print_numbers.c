@@ -27,4 +27,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	else if (separator != NULL && n == 0)
 		printf(" ");
+va_end(nptr);
 }
