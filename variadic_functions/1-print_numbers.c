@@ -10,7 +10,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list nptr;
 
 	va_start(nptr, n);
-	if ( n > 0)
+	if (n > 0)
 	{
 		if (separator == NULL)
 		{
@@ -25,4 +25,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d\n", va_arg(nptr, unsigned int));
 		}
 	}
+	else
+		printf(" ");
 }
