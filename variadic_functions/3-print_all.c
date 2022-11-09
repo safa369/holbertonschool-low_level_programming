@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	while (format && n <= i - 1)
 	{
 		if (n == (i - 1))
-			separator = " ";
+			separator = "";
 	switch(format[n])
 	{
 		case 'c':
