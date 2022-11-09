@@ -10,9 +10,9 @@ void print_all(const char * const format, ...)
 	char *string;
 	va_list ptr;
 
-	separator = ",";
+	separator = ", ";
 	va_start (ptr, format);
-	while (format[i])
+	while (format[i] && format)
 		i++;
 	while (format && n <= i - 1)
 	{
