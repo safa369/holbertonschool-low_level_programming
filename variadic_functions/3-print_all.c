@@ -7,7 +7,7 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, n = 0;
 	char *separator;
-	char *string;
+	char *str;
 	va_list ptr;
 
 	separator = ", ";
@@ -31,10 +31,12 @@ void print_all(const char * const format, ...)
 		break;
 		case 's':
 		{
-			string = va_arg(ptr, char *);
-			if (string == NULL)
+			str = va_arg(ptr, char *);
+			if (str == NULL)
+			{
 				printf("(nil)%s", separator);
-			printf("%s%s", string, separator);
+			}
+				printf("%s%s", va_arg(ptr, char *), separator);
 		}
 		break;
 	}
