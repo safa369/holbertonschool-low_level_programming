@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	va_start(ptr, format);
 	while (format[i] && format)
 		i++;
-	while (format[n] && n <= i - 1)
+	while (format[n] && format)
 	{
 		if (n == (i - 1))
 			separator = "";
