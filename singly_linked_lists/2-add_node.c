@@ -11,19 +11,27 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
-	unsigned int i = 0;
-	
+	unsigned int a;
+
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return(NULL);
 	new->str = strdup(str);
+	a = len_str(new->str);
+	new->len = a;
 	new->next = *head;
-	while(str)
-	{
-		i++;
-		str++;
-	}
-	new->len = i;
 	*head = new;
 	return (new);
+}
+/**
+ * len_str - function that count the length of a string.
+ * @ch: char.
+ * Return: unsigned int.
+ */
+unsigned int len_str(char *ch)
+{	
+	if (*ch == 0)
+		return(0);
+	else
+	return (1 + len_str(ch + 1));
 }
