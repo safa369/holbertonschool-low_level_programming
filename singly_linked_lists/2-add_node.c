@@ -39,10 +39,7 @@ list_t *add_node(list_t **head, const char *str)
 unsigned int len_str(char *ch)
 {
 	if (*ch == 0)
-	{
-		free(ch);
 		return (0);
-	}
 	else
 		return (1 + len_str(ch + 1));
 }
