@@ -5,7 +5,7 @@
  * @head: list_t.
  */
 void free_list(list_t *head)
-{ 
+{
 	list_t *last;
 
 	while (head != NULL)
