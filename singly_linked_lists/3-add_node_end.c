@@ -20,13 +20,24 @@ list_t *add_node_end(list_t **head, const char *str)
 		free (new);
 		return(0);
 	}
-	while (str[s] != 0)
-		s++;
 	new->str = strdup(str);
+	s = len_str(new->str);
 	new->len = s;
 	new->next = NULL;
 	while (last->next != NULL)
 		*last = *last->next;
 	last->next = new;
 	return (new);
+}
+/**
+*len_str - function that count the length of a string.
+ *@ch: char.
+ *Return: unsigned int.
+ **/
+unsigned int len_str(char *ch)
+{
+	if (*ch == 0)
+			return (0);
+		else
+	return (1 + len_str(ch + 1));
 }
