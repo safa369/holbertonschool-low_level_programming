@@ -20,7 +20,7 @@ file_destination = argv[2];
 fd1 = open(file_source, O_RDONLY);
 file_err(fd1, 98, fd1, file_source);
 fd2 = open(file_destination, O_CREAT | O_RDWR | O_TRUNC, 0664);
-ile_err(fd2, 99, fd2, file_destination);
+file_err(fd2, 99, fd2, file_destination);
 while (write_count == 1024)
 {
 read_count = read(fd1, buf, 1024);
