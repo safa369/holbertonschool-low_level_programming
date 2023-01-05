@@ -5,7 +5,11 @@
 */
 void print_binary(unsigned long int n)
 {
+    int printbin = ((n & 1) + '0');
+
 if (n > 1)
+{
 print_binary(n >> 1);
-printf("%ld", n & 1);
+}
+_putchar(printbin);
 }
