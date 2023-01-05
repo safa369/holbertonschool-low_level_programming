@@ -5,7 +5,7 @@
 */
 void print_binary(unsigned long int n)
 {
-    int printbin = ((n & 1) + '0');
+int printbin = ((n & 1) + '0');
 
 if (n > 1)
 {
