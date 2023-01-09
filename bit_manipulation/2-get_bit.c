@@ -13,6 +13,6 @@ return (-1);
 b = (n >> index) & 1;
 if ((b == 1) || (b == 0))
 return (b);
-else 
+else
 return (-1);
 }
