@@ -11,6 +11,10 @@ int binary_search(int *array, size_t size, int value)
 int middle, i, left = 0, right = size - 1;
 if (array == NULL)
 return (-1);
+printf("Searching in array:");
+for (i = 0; i < (size - 1); i++)
+printf(" %d,", array[i]);
+printf(" %d", array[size - 1]);
 while (left <= right)
 {
 middle = ((left + right) / 2);
